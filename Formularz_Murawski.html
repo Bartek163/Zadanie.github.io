@@ -11,39 +11,60 @@
         <button>
             <a href="index.html">Strona główna</a>
         </button>
+		
 <br>Email<br>
-<input name="Email"><br>
-<input name="Nazwisko">Podaj swoje nazwisko
+<input name="Email">
+<input name="Imie" maxlength=10>
+<input name="Nazwisko">
+<input type="password">
+<input name="Data">
 
-<p>Podaj swoją płeć:</p>
-<input type="radio" name="Płeć" value="Kobieta">Kobieta
-<input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna
+<p>Płeć:</p>
+<input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna <br>  
+<input type="radio" name="Płeć" value="Kobieta">Kobieta <br>
+<input type="radio" name="Płeć" value="Inne" checked>Inne <br>
 
-<p>Ile masz lat?</p>
-<input type="radio" name="Wiek" value="mniej niż 15">mniej niż 15<br>
-<input type="radio" name="Wiek" value="15-19">15-19<br>
-<input type="radio" name="Wiek" value="20-29">20-29<br>
-<input type="radio" name="Wiek" value="30-39">30-39<br>
-<input type="radio" name="Wiek" value="40-60">40-60<br>
-<input type="radio" name="Wiek" value="więcej niż 60">więcej niż 60 
+<p>Profesja</p>
+<select name="Profesja">
+	<option selected>Mag</option> 
+	<option>Druid</option>
+	<option>Palladyn</option>
+    <option>Zwiadowca</option>
+	<option>Berserk</option>
+</select>
+
+<p>Poziom</p>
+<form>
+<select name="Poziom">
+	<option selected>0-99</option> 
+	<option>100-199</option>
+	<option>200-299</option>
+    <option>300+</option>
+</select>
+</form>
+
+<p>Świat:</p>
+<form>
+<input type="radio" name="Świat" value="40">#40<br>
+<input type="radio" name="Świat" value="35">#35<br>
+<input type="radio" name="Świat" value="20">#20<br>
+<input type="radio" name="Świat" value="19">#19<br>
+<input type="radio" name="Świat" value="3">#3<br>
+</form>
+
+<p>Platforma:</p>
+<form>
+<input type="radio" name="Świat" value="40">#40<br>
+<input type="radio" name="Świat" value="35">#35<br>
+<input type="radio" name="Świat" value="20">#20<br>
+<input type="radio" name="Świat" value="19">#19<br>
+<input type="radio" name="Świat" value="3">#3<br>
+</form>
 
 <p>Jaką lubisz muzykę (możesz zaznaczyć więcej możliwości)?</p>
-<input type="checkbox" name="Muzyka" value="Rock">Rock<br>
-<input type="checkbox" name="Muzyka" value="Heavy Metal">Heavy Metal<br>
-<input type="checkbox" name="Muzyka" value="Pop">Pop<br>
-<input type="checkbox" name="Muzyka" value="Techno">Techno<br>
-<input type="checkbox" name="Muzyka" value="Muzyka poważna">Muzyka poważna<br>
 <input type="checkbox" name="Muzyka" value="Inna">Inna (podaj jaka):
-<input name="Muzyka">
 
-<p>Jakiej przeglądarki internetowej używasz?</p>
-<select name="Przeglądarka">
-	<option selected>Chrome</option>
-	<option>Opera</option>
-	<option>Firefox</option>
-    <option>Edge</option>
-	<option>Inna</option>
-</select>
+
 
 <p>Jakie znasz systemy operacyjne (możesz wybrać kilka opcji trzymając klawisz Ctrl)?</p>
 <select name="System operacyjny" multiple size="3">
@@ -53,8 +74,8 @@
 	<option>Inny</option>
 </select>
 
-<p>Podaj swój komentarz:</p>
-<textarea name="Komentarz" cols="50" rows="10">Proszę, wpisz tutaj jakiś komentarz...</textarea>
+<p>Dodatkowe informacje:</p>
+<textarea name="Komentarz" cols="50" rows="10"></textarea>
 <br><br><br>
 
 <input type="submit" value="Wyślij formularz">
